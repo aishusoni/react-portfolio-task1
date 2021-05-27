@@ -14,7 +14,9 @@ export default class work extends Component {
                {
                return(
                 <div class="column2" >
-                  <h2>
+                  <h2 style={{
+                    color:"#15014d"
+                  }}>
                   {item.CompanyName}
                   </h2>
                   <p style={
@@ -35,12 +37,11 @@ export default class work extends Component {
                   }> {item.tenure}</p>
                   
                     <div className="cours2">
-                    <h4>Achievements</h4>
+                    <h4 style={{
+                      color:"#05668d"
+                    }} >Achievements</h4>
                      <p className="hover2">{item.achievements}</p>
-                     <p style={{
-                         marginTop:"5rem",
-                         color: "#15014d"
-                     }}>{item.contact}</p>
+                     <p >{item.contact}</p>
                     </div>  
                   </div>
                   );

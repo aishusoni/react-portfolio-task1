@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ErrorBoundary from '../ErrorBoundary';
+// import ErrorBoundary from '../ErrorBoundary';
 class Brief extends Component {
     constructor(props){
         super(props);
@@ -24,36 +24,9 @@ class Brief extends Component {
     return (
         <div data-spy="scroll" data-target="#nav_scroll" data-offset="0" className="brief" id="Brief">
             <div className="row3">
-                <div className={btn_class}>
-                    <h1 style={{
-                        marginTop:"11rem",
-                        fontSize:"100px",
-                    }}>INTERESTING RIGHT?</h1>
-                    <p style={{
-                        marginTop:"5rem"
-                    }}>
-                        <ErrorBoundary>
-                    <button type="button" class="btn btn-secondary btn-lg" 
-                    onClick={()=>{alert("THANKYOU!")}}
-                    onMouseOver={()=>{this.setState({bgn:true})}} 
-                    onMouseLeave={()=>{this.setState({bgn:false})}} style={{
-                        marginLeft:"-1rem"
-                    }}>YES</button>
-                    
-                    <button type="button" class="btn btn-secondary btn-lg" 
-                    onClick={()=>{throw new Error('..hmmm')}}
-                    onMouseOver={()=>{this.setState({bgy:true})}} 
-                    onMouseLeave={()=>{this.setState({bgy:false})}}
-                    style={{
-                        marginLeft:"10rem"
-                    }}>NO</button>
-                    </ErrorBoundary>
-                    </p>
-                </div>
-            
                 <div className="coloumn32" style={{
-                    backgroundColor:"#1C2341",
-                }}>
+                       backgroundColor:"#1C2341",
+                    }}>
                     <h3 style={{
                         color:"white"}
                     }>ONLY THING I WANT YOU TO FOCUS ON</h3>
@@ -70,6 +43,30 @@ class Brief extends Component {
                     })
                     }
                 </div>
+
+                <div className={btn_class}>
+                    <h1 className="inters">INTERESTING RIGHT?</h1>
+                    <p style={{
+                        marginTop:"5rem"
+                    }}>
+                    <button type="button" class="btn btn-secondary btn-lg" 
+                    onClick={()=>{alert("THANKYOU!")}}
+                    onMouseOver={()=>{this.setState({bgn:true})}} 
+                    onMouseLeave={()=>{this.setState({bgn:false})}} style={{
+                        marginLeft:"-1rem"
+                    }}>YES</button>
+                    
+                    <button type="button" class="btn btn-secondary btn-lg" 
+                    onClick={()=>{throw new Error('..hmmm')}}
+                    onMouseOver={()=>{this.setState({bgy:true})}} 
+                    onMouseLeave={()=>{this.setState({bgy:false})}}
+                    style={{
+                        marginLeft:"10rem"
+                    }}>NO</button>
+                    </p>
+                </div>
+            
+                
             </div>
         </div>
    );

@@ -6,7 +6,7 @@ export default class Navbar extends Component {
       <React.Fragment>
       
       <header id="home">
-      <nav id="nav_scroll" className="navbar navbar-expand-lg navbar-light bg-darker"  >
+      <nav id="nav_scroll" className="navbar navbar-expand-lg navbar-light bg-darker navabsolute"  >
         {/* <div className="container"> */}
       <h1 className="navbar-brand" > </h1>
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" >
@@ -31,7 +31,7 @@ export default class Navbar extends Component {
           </li>
         </ul>
         <span className="navbar-text">
-        ...Not a typical guy who's from IIM or IIT &nbsp;  
+        Not a typical guy who's from IIM or IIT &nbsp;  
         </span>
       </div>
       {/* </div> */}
@@ -45,7 +45,7 @@ export default class Navbar extends Component {
               <p className="header2">{resumeData.aboutme}</p>
              <img className="pic" src="https://store.hp.com/app/assets/images/uploads/prod/misty-forest-background1595620320482968.jpg?impolicy=prdimg&imdensity=1&imwidth=600" alt="" />
              
-             {/* https://img.freepik.com/free-photo/dark-blue-texture-cement-wall-background_28629-1627.jpg?size=626&ext=jpg   https://lh3.googleusercontent.com/proxy/FamMIPwNCkEiFs7yovi7nVmBwV1_ZxF4k0TJyjZYbHla0AgmKTvHP2U-QLQHVW58phNdEXS_rYoeUmjCR5fUGhVBlR-KDNloZhf5vQ6hvtBJy8ROuty5qQ*/}
+            
             </div>
            
          </div>

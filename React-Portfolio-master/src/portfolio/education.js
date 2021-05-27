@@ -35,7 +35,7 @@ export default class Educat extends Component {
                   }> {item.tenure}</p>
                   
                     <div className="cours">
-                    <div id="accordion">
+                    <div id="accordion" className="coursbtn">
                     <div className="card cdh">
                         <div className="card-header" id="headingOne">
                         <h5 className="mb-0">

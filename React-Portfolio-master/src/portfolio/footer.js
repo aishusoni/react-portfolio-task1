@@ -4,14 +4,14 @@ export default class Footer extends Component {
     let resumeData = this.props.resumeData;
     return (
       <footer >
-
           <div >
             {
               resumeData.socialLinks && resumeData.socialLinks.map((item)=>{
                 return(
                   <div>
                   <p style={{
-                    textAlign:"center"
+                    textAlign:"center",
+                    color:"white",
                   }}>
                     &nbsp;&nbsp;
                     <b>E-Mail: </b>&nbsp;
